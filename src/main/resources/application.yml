@@ -12,5 +12,7 @@ ebay:
   oauth2:
     client:
       grantType: client_credentials
+      clientId: <your-id>
+      clientSecret: <your-secret>
       accessTokenUri: https://api.sandbox.ebay.com/identity/v1/oauth2/token
       scope: https://api.ebay.com/oauth/api_scope https://api.ebay.com/oauth/api_scope/buy.guest.order https://api.ebay.com/oauth/api_scope/buy.item.feed https://api.ebay.com/oauth/api_scope/buy.marketing https://api.ebay.com/oauth/api_scope/buy.product.feed
