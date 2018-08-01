@@ -1,0 +1,16 @@
+server:
+  port: 8090
+logging:
+  level:
+    org.springframework.web.client: DEBUG
+    org.springframework.security.oauth2.client: DEBUG
+    org.springframework.http.converter: DEBUG
+    com.example.demo: DEBUG
+
+ebay:
+  baseUrl: https://api.sandbox.ebay.com/buy/browse/v1
+  oauth2:
+    client:
+      grantType: client_credentials
+      accessTokenUri: https://api.sandbox.ebay.com/identity/v1/oauth2/token
+      scope: https://api.ebay.com/oauth/api_scope https://api.ebay.com/oauth/api_scope/buy.guest.order https://api.ebay.com/oauth/api_scope/buy.item.feed https://api.ebay.com/oauth/api_scope/buy.marketing https://api.ebay.com/oauth/api_scope/buy.product.feed
